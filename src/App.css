@@ -1,4 +1,18 @@
-body {
+#root {
+
 	padding: 20px;
 	width: 100%;
+}
+
+main, .component {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+h2 {
+	padding: 10px;
+	width: fit-content;
+	font-size: 18px;
+	border-bottom: 1px dashed #4A4A4A;
 }
