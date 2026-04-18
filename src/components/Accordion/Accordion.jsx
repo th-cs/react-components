@@ -1,12 +1,12 @@
 import "./Accordion.css";
+import { useState } from "react";
 
 function Accordion({ title, content }) {
+
+	const [isActive, setIsActive] = useState(false);
+
 	function toggleAccordion() {
-		const accordionContent =
-			document.querySelectorAll(".accordion-content");
-		for (let i = 0; i < accordionContent.length; i++) {
-			accordionContent[i].classList.toggle("active");
-		}
+		setIsActive(!isActive);
 	}
 
 	return(
@@ -22,7 +22,7 @@ function Accordion({ title, content }) {
 					width="20px"
 					height="20px"/>
 			</button>
-			<div className="accordion-content">
+			<div className={`accordion-content ${isActive ? "active" : ""}`}>
 				<p>{content}</p>
 			</div>
 		</div>
