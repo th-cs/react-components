@@ -1,0 +1,28 @@
+/* CSS Modules */
+.button {
+	display: flex;
+	align-items: center;
+	gap: 6px;
+	padding: 10px 16px;
+	width: fit-content;
+	background: #393939;
+	border-radius: 10px;
+	cursor: pointer;
+
+	transition: background-color 0.1s linear;
+}
+
+.button:hover {
+	background: #202020;
+}
+
+.buttonImg {
+	width: 24px;
+	height: 24px;
+}
+
+.buttonSpan {
+	color: #DCDCDC;
+	font-size: 14px;
+	font-weight: 500;
+}
